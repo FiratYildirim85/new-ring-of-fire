@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'new-ring-of-fire'`, () => {
+  it(`should have as title 'ringoffire'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('new-ring-of-fire');
+    expect(app.title).toEqual('ringoffire');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('new-ring-of-fire app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ringoffire app is running!');
   });
 });
